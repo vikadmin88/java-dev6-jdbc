@@ -17,7 +17,6 @@ public class DatabaseQueryService {
     private static final Connection DB_CONN = Database.getInstance().getConnection();
 
     public List<LongestProject> findLongestProjects() {
-        System.out.println("Find longest projects...");
         List<LongestProject> longestProjectList = new ArrayList<>();
 
         try (Statement stm = DB_CONN.createStatement()) {
@@ -39,7 +38,6 @@ public class DatabaseQueryService {
     }
 
     public List<MaxProjectCountClient> findMaxProjectsClient() {
-        System.out.println("Find max projects client...");
         List<MaxProjectCountClient> maxProjectsList = new ArrayList<>();
 
         try (Statement stm = DB_CONN.createStatement()) {
@@ -61,7 +59,6 @@ public class DatabaseQueryService {
     }
 
     public List<MaxWorkerSalary> findMaxWorkerSalary() {
-        System.out.println("Find max workers salary...");
         List<MaxWorkerSalary> maxWorkersSalaryList = new ArrayList<>();
 
         try (Statement stm = DB_CONN.createStatement()) {
@@ -83,7 +80,6 @@ public class DatabaseQueryService {
     }
 
     public List<WorkerBirthday> findYoungestEldestWorkers() {
-        System.out.println("Find youngest-eldest workers...");
         List<WorkerBirthday> yeWorkersList = new ArrayList<>();
 
         try (Statement stm = DB_CONN.createStatement()) {
@@ -107,7 +103,6 @@ public class DatabaseQueryService {
     }
 
     public List<ProjectPrice> getProjectPrices() {
-        System.out.println("Get project prices...");
         List<ProjectPrice> projectPricesList = new ArrayList<>();
 
         try (Statement stm = DB_CONN.createStatement()) {

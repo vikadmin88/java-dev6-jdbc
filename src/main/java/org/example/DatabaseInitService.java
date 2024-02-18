@@ -9,10 +9,10 @@ import java.sql.Statement;
 
 public class DatabaseInitService {
     public static void main(String[] args) throws SQLException {
-        initBatabase();
+        initDatabase();
     }
 
-    public static void initBatabase() throws SQLException {
+    public static void initDatabase() throws SQLException {
         System.out.println("H2 init data...");
         Connection dbH2Conn = Database.getInstance().getConnection();
         Statement stm = dbH2Conn.createStatement();
