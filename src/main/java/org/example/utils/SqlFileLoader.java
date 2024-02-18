@@ -6,8 +6,6 @@ import java.nio.file.Paths;
 
 public class SqlFileLoader {
 
-    private static final StringBuilder SB = new StringBuilder();
-
     public static String loadSQL(String filePath) {
         try {
             return new String(Files.readAllBytes(Paths.get(filePath)));
